@@ -1,0 +1,137 @@
+body
+{
+    margin: 0%;
+    padding: 30px;
+    background-color:hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    justify-content: center;
+    
+}
+.mainbox
+{
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 20px;
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items: center;
+
+    
+}
+.inputbox
+{
+    width: 450px;
+}
+
+.input
+{
+    border-radius: 5px ;
+    height: 40px;
+    width: 380px;
+    border: 0px;
+    background-color: hsl(191, 24%, 87%);
+    padding: 10px;
+    font-weight: 800;
+    color:hsl(183, 100%, 15%);
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    
+}
+.tips
+{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.outputbox
+{
+    background-color: hsl(183, 100%, 15%);
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+.values
+{
+    display: flex;
+    flex-direction: column;
+}
+.outputvalues
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.outputlabel
+{
+color: hsl(0, 0%, 100%);
+display: block;
+font-size: 18px;
+font-weight: 500;
+}
+.sublabel
+{
+font-size: 13px; 
+  color: #bebebe; 
+  font-weight: normal;
+}
+.prize
+{
+    font-weight: 700;
+    font-size: 30px;
+    color:hsl(172, 67%, 45%) ;
+}
+.reset
+{
+    background-color: hsl(172, 67%, 45%);
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0px solid;
+    font-weight: 900;
+    color: hsl(183, 100%, 15%);
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.tipbutton
+{
+    padding: 10px;
+    width: 100px;
+   margin: 8px;
+    background: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: 0px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.tipbutton:hover
+{
+    background: hsl(172, 67%, 45%);
+}
+.custombutton
+{
+    padding: 10px;
+    width: 100px;
+   margin: 8px;
+    background: hsl(0, 0%, 92%);
+    border: 0px;
+    color: hsl(184, 14%, 56%);
+    display: flex;
+    justify-content: center;
+    font-weight: 600; 
+    border-radius: 5px;
+
+}
