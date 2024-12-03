@@ -8,37 +8,35 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   
-  <!-- Corrected src for JavaScript -->
-  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="mainbox">
     <div class="inputbox">
       <p>Bill</p>
-      <input type="text" class="input" placeholder="$" id="display">
+      <input type="number" class="input" placeholder="$" id="bilAmount">
       
       <p>Select Tip %</p>
       <div class="tips">
-        <div class="tipbutton" data-tip="5">5%</div>
-        <div class="tipbutton" data-tip="10">10%</div>
-        <div class="tipbutton" data-tip="15">15%</div>
-        <div class="tipbutton" data-tip="20">20%</div>
-        <div class="tipbutton" data-tip="25">25%</div>
-        <div class="custombutton">Custom</div>
+        <button class="tipbutton"  onclick="tipValue(5)">5%</button>
+        <button class="tipbutton" onclick="tipValue(10)">10%</button>
+        <button class="tipbutton" onclick="tipValue(15)">15%</button>
+        <button class="tipbutton" onclick="tipValue(20)">20%</button>
+        <button class="tipbutton" onclick="tipValue(25)">25%</button>
+        <button class="custombutton"onclick="TipValue()">Custom</button>
       </div>
       
       <p>No of People</p>
-      <input type="text" class="input" placeholder="">
+      <input type="number" class="input" placeholder="" id="noPersons">
     </div>
 
     <div class="outputbox">
       <div class="values">
         <div class="outputvalues">
           <span>
-            <span class="outputlabel">Tip Amount</span>
+            <p class="outputlabel">Tip Amount</p>
             <span class="sublabel">/person</span>
           </span>
-          <span class="prize">$0.00</span>
+          <p class="prize" id="tipAmount">$0.00</p>
         </div>
 
         <div class="outputvalues">
@@ -46,11 +44,12 @@
             <span class="outputlabel">Total</span>
             <span class="sublabel">/person</span>
           </span>
-          <span class="prize">$0.00</span>
+          <span class="prize" id="perPersonAmount">$0.00</span>
         </div>
       </div>
       <div class="reset">RESET</div>
     </div>
   </div>
+  <script src="script.js" defer></script>
 </body>
 </html>
